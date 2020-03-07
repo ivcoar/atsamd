@@ -1,13 +1,13 @@
 [package]
-name = "arduino_mkrzero"
-version = "0.6.0"
-authors = ["Wez Furlong <wez@wezfurlong.org>", "David McGillicuddy <contact@djmcgill.co.uk>"]
-description = "Board Support crate for the Arduino MKRZERO"
+name = "arduino_nano33"
+version = "0.1.0"
+authors = ["Ivan Cordero <ivcoar@hotmail.com>"]
+description = "Board Support crate for the Arduino NANO 33 IoT"
 keywords = ["no-std", "arm", "cortex-m", "embedded-hal", "arduino"]
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/atsamd-rs/atsamd"
 readme = "README.md"
-documentation = "https://atsamd-rs.github.io/atsamd/atsamd21g18a/arduino_mkrzero/"
+documentation = "https://atsamd-rs.github.io/atsamd/atsamd21g18a/arduino_nano33/"
 
 [dependencies]
 cortex-m = "~0.6"

@@ -22,34 +22,71 @@ use gpio::{Floating, Input, Port};
 // The docs could be further improved with details of the specific channels etc
 define_pins!(
     /// Maps the pins to their arduino names and the numbers printed on the board.
-    /// Information from: <https://github.com/arduino/ArduinoCore-samd/blob/master/variants/mkrzero/variant.cpp>
+    /// Information from: <https://github.com/arduino/ArduinoCore-samd/blob/master/variants/nano_33_iot/variant.cpp>
     struct Pins,
     target_device: target_device,
 
-    /// Digital 0: PWM, TC
-    pin d0 = a22,
+    /// Digital 2: PWM
+    pin d2 = b19,
 
-    /// Digital 1: PWM, TC
-    pin d1 = a23,
+    /// Digital 3: PWM
+    pin d3 = b11,
 
-    /// Digital 2: PWM, TCC, ADC
-    pin d2 = a10,
+    /// Digital 4:
+    pin d4 = a7,
 
-    /// Digital 3: PWM, TCC, ADC
-    pin d3 = a11,
+    /// Digital 5: PWM
+    pin d5 = a5,
 
-    /// Digital 4: PWM, TC
-    pin d4 = b10,
+    /// Digital 6: PWM
+    pin d6 = a4,
 
-    /// Digital 5: PWM, TC
-    pin d5 = b11,
+    /// Digital 7:
+    pin d7 = a6,
 
-    /// Digital 6: PWM, TCC
-    pin d6 = a20,
+    /// Digital 8:
+    pin d8 = a18,
 
-    /// Digital 7: PWM, TCC
-    pin d7 = a21,
+    /// Digital 9: PWM
+    pin d9 = a20,
 
+    /// Digital 10: PWM
+    pin d10 = a21,
+
+    /// Digital 11: PWM
+    pin d11 = a16,
+
+    /// Digital 12: PWM
+    pin d12 = a19,
+
+    /// Digital 13: LED
+    pin d13 = a17,
+
+    /// Analog 0:
+    pin a0 = a2,
+
+    /// Analog 1:
+    pin a1 = b2,
+
+    /// Analog 2:
+    pin a2 = a11,
+
+    /// Analog 3:
+    pin a3 = a10,
+
+    /// Analog 4:
+    pin a4 = b8,
+
+    /// Analog 5:
+    pin a5 = b9,
+
+    /// Analog 6:
+    pin a6 = a9,
+
+    /// Analog 7:
+    pin a7 = b3,
+
+/*
     /// SPI MOSI: PWM, TCC
     pin mosi = a16,
 
@@ -60,53 +97,14 @@ define_pins!(
     pin miso = a19,
 
     /// SDA
-    pin sda = a8,
+    pin sda = b8,
 
     /// SCL
-    pin scl = a9,
+    pin scl = b9,
 
-    /// RX
-    pin rx = b23,
-
-    /// TX
-    pin tx = b22,
-
-    /// Analog 0: DAC
-    pin a0 = a2,
-
-    /// Analog 1
-    pin a1 = b2,
-
-    /// Analog 2
-    pin a2 = b3,
-
-    /// Analog 3: PWM, TCC
-    pin a3 = a4,
-
-    /// Analog 4: PWM, TCC
-    pin a4 = a5,
-
-    /// Analog 5
-    pin a5 = a6,
-
-    /// Analog 6
-    pin a6 = a7,
+*/
 
     pin usb_n = a24,
     pin usb_p = a25,
-    pin usb_id = a18,
     pin aref = a3,
-    pin sd_sck = a12,
-    pin sd_mosi = a13,
-    pin sd_ss = a14,
-    pin sd_miso = a15,
-    pin sd_cd = a27,
-
-    /// LED built into the board
-    pin led_builtin = b8,
-
-    pin bottom_pad = a28,
-    pin adc_battery = b9,
-    pin xin32 = a0,
-    pin xout32 = a1,
 );
